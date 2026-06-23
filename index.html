@@ -1,0 +1,157 @@
+  <!DOCTYPE html>
+  <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zbszbszbssca</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+        background: #0b0b0b;
+        color: #f2f2f2;
+        line-height: 1.6;
+      }
+
+      .page {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 64px 24px 80px;
+      }
+
+      header {
+        margin-bottom: 72px;
+      }
+
+      .name {
+        font-size: 44px;
+        font-weight: 700;
+        margin: 0 0 12px;
+        letter-spacing: -1px;
+      }
+
+      .identity {
+        font-size: 18px;
+        color: #aaa;
+        margin-bottom: 28px;
+      }
+
+      .links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .link-button {
+        display: inline-block;
+        padding: 10px 16px;
+        border: 1px solid #333;
+        border-radius: 999px;
+        color: #f2f2f2;
+        text-decoration: none;
+        background: #151515;
+        transition: 0.2s ease;
+      }
+
+      .link-button:hover {
+        background: #222;
+        border-color: #666;
+      }
+
+      .section-title {
+        font-size: 24px;
+        margin: 0 0 32px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #2a2a2a;
+        color: #ddd;
+      }
+
+      .project {
+        margin-bottom: 72px;
+      }
+
+      .project-title {
+        font-size: 22px;
+        margin: 0 0 16px;
+        color: #fff;
+      }
+
+      video {
+        width: 100%;
+        display: block;
+        border-radius: 14px;
+        border: 1px solid #2a2a2a;
+        background: #000;
+      }
+
+      footer {
+        margin-top: 80px;
+        padding-top: 24px;
+        border-top: 1px solid #2a2a2a;
+        color: #777;
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        .page {
+          padding: 40px 18px 60px;
+        }
+
+        .name {
+          font-size: 34px;
+        }
+
+        .project {
+          margin-bottom: 52px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <header>
+        <h1 class="name">Zbszbszbssca</h1>
+        <div class="identity">大三</div>
+
+        <div class="links">
+          <a class="link-button" href="https://github.com/Zbszbszbssca" target="_blank">
+            GitHub
+          </a>
+
+          <a class="link-button" href="https://space.bilibili.com/1813896310/upload/video" target="_blank">
+            Bilibili
+          </a>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+          <h3 class="project-title">Project 01</h3>
+          <video controls preload="metadata" src="videos/project1.mp4"></video>
+        </div>
+
+        <div class="project">
+          <h3 class="project-title">Project 02</h3>
+          <video controls preload="metadata" src="videos/project2.mp4"></video>
+        </div>
+
+        <div class="project">
+          <h3 class="project-title">Project 03</h3>
+          <video controls preload="metadata" src="videos/project3.mp4"></video>
+        </div>
+      </section>
+
+      <footer>
+        © Zbszbszbssca
+      </footer>
+    </main>
+  </body>
+  </html>
