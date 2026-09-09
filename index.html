@@ -324,6 +324,17 @@
         border: 0;
       }
 
+      .video-note {
+        margin: 14px 2px 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .video-note strong {
+        color: #dcefff;
+        font-weight: 600;
+      }
+
       footer {
         margin-top: 72px;
         padding-top: 24px;
@@ -404,29 +415,29 @@
             src="https://github.com/Zbszbszbssca.png"
             alt="Zbszbszbssca 的头像"
           />
-          <div class="status">VLA · WAM</div>
+          <div class="status">MANIP · RL</div>
         </div>
 
         <div>
           <h1 class="name">Sca / Zbszbszbssca</h1>
-          <p class="identity">大三 · VLA / World Models / Embodied Intelligence / RL Locomotion</p>
+          <p class="identity">大三 · Robotics / Embodied Intelligence / Manipulation / RL Locomotion</p>
           
           <p class="intro">
-            我是一名专注机器人与具身智能方向的本科生，目前主要研究 Vision-Language-Action（VLA）
-            与 World Action Model（WAM），关注双臂灵巧操作中的仿真 Benchmark、遥操作数据采集、
-            多模态策略训练与闭环部署。同时持续探索强化学习运动控制、Sim2Real 与真实机器人系统集成，
-            希望构建从感知、预测、决策到控制能够端到端协同的具身智能系统。
+            我是一名专注机器人与具身智能方向的本科生，目前主要围绕机器人 Manipulation 和双臂灵巧操作开展实践，
+            关注从仿真 Benchmark、遥操作示教与多模态数据采集，到模仿学习策略训练和闭环部署的完整流程。
+            同时持续研究四轮足 / 轮足机器人的 RL Locomotion、Sim2Sim 与 Sim2Real，
+            希望提升机器人在复杂操作任务与非结构化环境中的自主性、稳定性和泛化能力。
           </p>
           
           <div class="info-grid">
             <div class="info-item">
-              <strong>Focus</strong> · VLA、World Models、双臂灵巧操作
+              <strong>Focus</strong> · Manipulation、双臂灵巧操作、RL Locomotion
             </div>
             <div class="info-item">
               <strong>Skills</strong> · Python / C++、PyTorch、ROS 2、Isaac Sim / Lab、LeRobot
             </div>
             <div class="info-item">
-              <strong>Interests</strong> · VLA / WAM、Dexterous Manipulation、Sim2Real、RL Locomotion
+              <strong>Interests</strong> · Robot Learning、Dexterous Manipulation、Sim2Real、NMPC / WBC
             </div>
             <div class="info-item">
               <strong>Status</strong> · Building embodied AI systems from data to deployment
@@ -462,29 +473,33 @@
         <div class="projects">
           <article class="project">
             <span class="project-index">Project 01 · YouTube</span>
-            <h3 class="project-title">FastWAM · 双臂灵巧操作世界动作模型</h3>
+            <h3 class="project-title">FastWAM · 双臂灵巧操作</h3>
             <p class="project-desc">
               面向 Tianji Marvin Pro 双七轴机械臂与双 Wuji Hand，在 DexVerse 中构建三相机、54 维状态与动作的
-              操作 Benchmark；完成 FastWAM-IDM 数据适配、多机多卡训练，以及未来视频与动作联合预测的仿真闭环部署。
+              操作 Benchmark；完成多模态数据适配、多机多卡训练，以及策略服务与仿真环境的闭环部署。
             </p>
 
             <div class="tags">
               <span class="tag">FastWAM</span>
-              <span class="tag">World Model</span>
-              <span class="tag">VLA</span>
+              <span class="tag">Robot Learning</span>
+              <span class="tag">Multi-GPU</span>
               <span class="tag">Dexterous Manipulation</span>
             </div>
 
             <div class="video-box">
               <iframe
                 src="https://www.youtube.com/embed/VQRWCscsZd4"
-                title="FastWAM 双臂灵巧操作世界动作模型演示视频"
+                title="FastWAM 双臂灵巧操作演示视频"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen>
               </iframe>
             </div>
+
+            <p class="video-note">
+              <strong>FastWAM / WM 实践</strong> · 基于三相机视觉与 54 维机器人状态/动作，探索未来视觉与动作的联合预测。
+            </p>
           </article>
 
           <article class="project">
